@@ -2,23 +2,15 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build active file",
-            "type": "shell",
-            "command": "g++",
-            "args": [
-                "-g",
-                "${file}"
-            ],
-            "group": "build"
-        },
-        {
             "type": "cppbuild",
-            "label": "C/C++: g++.exe build active file",
+            "label": "cppbuild",
             "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
+                "-Wall",
+                "--std=c++14",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],

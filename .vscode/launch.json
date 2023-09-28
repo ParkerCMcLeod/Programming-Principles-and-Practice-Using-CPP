@@ -20,7 +20,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "build active file",
+            "preLaunchTask": "cppbuild",
             "logging": {
                 "trace": false,
                 "traceResponse": false,
